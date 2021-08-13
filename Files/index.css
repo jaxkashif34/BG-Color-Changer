@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courgette', cursive;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 45%;
+  height: auto;
+}
+
+.col .colorName {
+  color: #e9e9e9;
+  font-size: 30px;
+  text-align: center;
+}
+
+.btn {
+  margin: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 180px;
+  height: 50px;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 6px 30px -10px #cccccc;
+          box-shadow: 0 6px 30px -10px #cccccc;
+}
+
+.shop-now {
+  position: relative;
+}
+
+.shop-now .santa-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -17px;
+  right: -20px;
+  -webkit-transform: rotate(14deg);
+          transform: rotate(14deg);
+}
+
+.shop-now .santa-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.snowflake-grid {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 50px;
+  gap: 5px;
+  width: 100px;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+}
+
+.snowflake-grid div {
+  border-radius: 5px;
+}
+
+.snowflake-grid .snowflake-item {
+  position: relative;
+}
+
+.to-left {
+  position: absolute;
+  top: -4px;
+  left: -35px;
+  -webkit-animation: swing 3s infinite;
+          animation: swing 3s infinite;
+}
+
+.to-left div {
+  -webkit-animation: flash 3s infinite;
+          animation: flash 3s infinite;
+}
+
+.to-right {
+  position: absolute;
+  top: -25px;
+  right: -35px;
+  -webkit-animation: swing 2.5s infinite;
+          animation: swing 2.5s infinite;
+}
+
+.to-right div {
+  -webkit-animation: flash 2.5s infinite;
+          animation: flash 2.5s infinite;
+}
+
+.border-left {
+  border-left: 4px solid #e6dada;
+}
+
+.border-right {
+  border-right: 4px solid #e6dada;
+}
+
+.border-bottom {
+  border-bottom: 4px solid #e6dada;
+}
+
+.border-top {
+  border-top: 4px solid #e6dada;
+}
+
+.sub-items {
+  height: 28px;
+  width: 28px;
+}
+
+.m-w-15 {
+  width: 15px;
+}
+
+.m-h-15 {
+  height: 15px;
+}
+
+.r-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.r-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.r-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.pull-down {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.pull-down-right {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+.pull-right {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.pull-left {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.m-3 {
+  margin: 3px;
+}
+
+@-webkit-keyframes swing {
+  50% {
+    -webkit-transform: rotateZ(10deg) scale(0.4);
+            transform: rotateZ(10deg) scale(0.4);
+  }
+}
+
+@keyframes swing {
+  50% {
+    -webkit-transform: rotateZ(10deg) scale(0.4);
+            transform: rotateZ(10deg) scale(0.4);
+  }
+}
+
+@-webkit-keyframes flash {
+  50% {
+    border-color: #485563;
+  }
+}
+
+@keyframes flash {
+  50% {
+    border-color: #485563;
+  }
+}
+/*# sourceMappingURL=index.css.map */
