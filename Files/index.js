@@ -1,14 +1,15 @@
 const button = document.querySelector('.btn')
-button.addEventListener("click", colorGenerator)
+button.addEventListener("click", randomColorGenerator)
+randomColorGenerator()
 
-function colorGenerator() {
-    let finalColor1 = "#";
-    var randomColor1 = Math.floor(Math.random() * 16777215).toString(16);
-    finalColor1 += randomColor1
-    let finalColor2 = "#";
-    var randomColor2 = Math.floor(Math.random() * 16777215).toString(16);
-    finalColor2 += randomColor2
-    document.querySelector("body").style.backgroundImage = `linear-gradient(45deg, ${finalColor1}, ${finalColor2})`
-    document.querySelector(".actual-color").textContent = `${finalColor1 + " " + finalColor2}`
+function randomColorGenerator() {
+    let colorArray = [];
+    for (let i = 0; i < 2; i++) {
+        let finalColor = "#";
+        let randomHexa = Math.floor(Math.random() * 16777216).toString(16);
+        finalColor += randomHexa;
+        colorArray.push(finalColor);
+    }
+    document.querySelector(".actual-color").textContent = `${colorArray[0] + " " + colorArray[1]}`
+    document.querySelector("body").style.backgroundImage = `linear-gradient(45deg, ${colorArray[0]}, ${colorArray[1]})`
 }
-colorGenerator()
