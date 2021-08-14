@@ -1,7 +1,6 @@
 const button = document.querySelector('.btn')
 button.addEventListener("click", randomColorGenerator)
 randomColorGenerator()
-
 function randomColorGenerator() {
     let colorArray = [];
     for (let i = 0; i < 2; i++) {
